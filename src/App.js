@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+
 import "./App.scss";
 import Education from "./Windows/Education";
 import Work from "./Windows/Work";
 import Projects from "./Windows/Projects";
 import About from "./Windows/About";
 import Skils from "./Windows/Skills";
+import Contact from "./Windows/Contact";
 
 const App = () => {
   const initialCoords = [
@@ -13,6 +16,7 @@ const App = () => {
     { id: "work", y: 300, z: 1002, active: false },
     { id: "projects", y: 450, z: 1003, active: false },
     { id: "skills", y: 600, z: 1004, active: false },
+    { id: "contact", y: 750, z: 1005, active: false },
   ];
 
   const renderSwitch = (id, active) => {
@@ -29,15 +33,18 @@ const App = () => {
         return <Projects active={active} close={() => selected(id)}></Projects>;
       case "skills":
         return <Skils active={active} close={() => selected(id)}></Skils>;
+      case "contact":
+        return (
+          <Contact
+            active={active}
+            close={() => selected(id)}
+            style={{ top: "2vh" }}
+          ></Contact>
+        );
     }
   };
 
   const [coords, setCoords] = useState(initialCoords);
-
-  // useEffect(() => {
-  //   window.addEventListener("wheel", scroll);
-  //   window.addEventListener("touchmove", scroll);
-  // });
 
   const [saveY, setSaveY] = useState(0);
   const [saveZ, setSaveZ] = useState(0);
@@ -57,6 +64,24 @@ const App = () => {
     setCoords(newCoords);
   };
 
+  const [start, setStart] = useState(0);
+  const [offset, setOffset] = useState(0);
+  const [wheelBool, setWheel] = useState(false);
+  const touchstart = (e) => {
+    setStart(e.touches[0].pageY);
+  };
+
+  const touchmove = (e) => {
+    setOffset(start.y - e.touches[0].pageY);
+  };
+
+  const yScroll = (e, y) => {
+    if (wheelBool) {
+      return y - (y * 0.7 + window.innerHeight * 0.5) * 0.001 * e.deltaY;
+    }
+    return y - offset;
+  };
+
   const scroll = (e) => {
     var active = false;
     coords.forEach((item) => {
@@ -65,22 +90,8 @@ const App = () => {
       }
     });
 
-    // if (active) {
-    //   const newCoords = coords.map((item) => {
-    //     if (item.active) {
-    //       return {
-    //         id: item.id,
-    //         y: item.y - e.deltaY,
-    //         z: item.z,
-    //         active: item.active,
-    //       };
-    //     }
-    //     return item;
-    //   });
-    //   setCoords(newCoords);
-    // }
-
     if (!active) {
+      setWheel(true);
       e.preventDefault();
       const newCoords = coords.map((item) => {
         //hit the top, send to the bottom (and highest z)
@@ -105,9 +116,7 @@ const App = () => {
         //regular scrolling
         return {
           id: item.id,
-          y:
-            item.y -
-            (item.y * 0.7 + window.innerHeight * 0.5) * 0.001 * e.deltaY,
+          y: yScroll(e, item.y),
           z: item.z,
           active: item.active,
         };
@@ -118,7 +127,12 @@ const App = () => {
   };
 
   return (
-    <div onWheel={scroll} className="main">
+    <div
+      onWheel={scroll}
+      onTouchStart={touchstart}
+      onTouchMove={touchmove}
+      className="main"
+    >
       <div className="scrollView">
         {coords.map((item) => (
           <div
@@ -138,31 +152,8 @@ const App = () => {
         ))}
       </div>
       <div className="sidebar">
-        <div>
-          <div className="rotate">
-            <h1>Alexander Schiff</h1>
-          </div>
-
-          <div className="contact">
-            <h1>Contact</h1>
-            <a
-              href="https://drive.google.com/file/d/1j_wG2_nEnpp5biTORhysEWmw978wd99C/view?usp=sharing"
-              target="_blank"
-            >
-              Resume
-            </a>
-            <a
-              href="https://www.linkedin.com/in/alexanderschiff"
-              target="_blank"
-            >
-              LinkedIn
-            </a>
-            <a href="mailTo:alexanderschiff@icloud.com">Email Me</a>
-            <a id="callme" onclick="number()">
-              Call Me
-            </a>
-          </div>
-        </div>
+        <h1>Alexander Schiff</h1>
+        <Contact style={{ bottom: "6vh" }}></Contact>
       </div>
     </div>
   );

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import "../App.scss";
 
 const Education = ({ active, close }) => {
+  const [circle, setCircle] = useState(false);
   return (
     <div>
       {active && (
@@ -13,7 +15,18 @@ const Education = ({ active, close }) => {
           Active
         </button>
       )}
-      <h1>Education</h1>
+      <RoughNotation
+        onMouseEnter={() => setCircle(true)}
+        onMouseLeave={() => setCircle(false)}
+        type="circle"
+        color="red"
+        show={circle}
+        padding={[0, -100, 0, 0]}
+        strokeWidth={4}
+      >
+        <h1>Education</h1>
+      </RoughNotation>
+
       <h3>Duke University</h3>
       <ul>
         <li>Expected graduation in May 2023</li>
