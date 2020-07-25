@@ -74,6 +74,7 @@ const App = () => {
 
   const touchmove = (e) => {
     setOffset(start.y - e.touches[0].pageY);
+    scroll(e);
   };
 
   const yScroll = (e, y) => {

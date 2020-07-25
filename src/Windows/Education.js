@@ -15,17 +15,18 @@ const Education = ({ active, close }) => {
           Active
         </button>
       )}
-      <RoughNotation
-        onMouseEnter={() => setCircle(true)}
-        onMouseLeave={() => setCircle(false)}
-        type="circle"
-        color="red"
-        show={circle}
-        padding={[0, -100, 0, 0]}
-        strokeWidth={4}
-      >
-        <h1>Education</h1>
-      </RoughNotation>
+      <div>
+        <RoughNotation
+          onMouseEnter={() => setCircle(true)}
+          onMouseLeave={() => setCircle(false)}
+          type="circle"
+          color="red"
+          show={circle}
+          strokeWidth={4}
+        >
+          <h1>Education</h1>
+        </RoughNotation>
+      </div>
 
       <h3>Duke University</h3>
       <ul>
