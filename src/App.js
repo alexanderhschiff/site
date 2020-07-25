@@ -68,6 +68,7 @@ const App = () => {
   const [offset, setOffset] = useState(0);
   const [wheelBool, setWheel] = useState(false);
   const touchstart = (e) => {
+    setWheel(false);
     setStart(e.touches[0].pageY);
   };
 
