@@ -1,34 +1,19 @@
-@font-face {
-  font-family: "pxRegular";
-  src: url("./Fonts/PxGroteskRegular.woff2");
-}
-
-@font-face {
-  font-family: "pxBold";
-  src: url("./Fonts/PxGrotesk-Bold.woff2");
-}
-
-@font-face {
-  font-family: "pxLight";
-  src: url("./Fonts/PxGrotesk-Light.woff2");
-}
-
-@font-face {
-  font-family: "pxScreen";
-  src: url("./Fonts/PxGrotesk-Screen.woff2");
-}
-
-@font-face {
-  font-family: "serif";
-  src: url("./Fonts/GTSectraDisplay-Regular.woff2");
-}
-
 * {
   overflow-y: hidden;
 }
 
+@font-face {
+  src: url("./Fonts/Telegraf-Regular.otf");
+  font-family: "regular";
+}
+
+@font-face {
+  src: url("./Fonts/Telegraf-UltraBold.otf");
+  font-family: "bold";
+}
+
 body {
-  font-family: "pxRegular";
+  font-family: "regular";
   margin: 0;
 }
 
@@ -38,15 +23,11 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  // display: grid;
-  // grid-template-columns: 1fr minmax(200px, 30vw);
-  // grid-template-rows: 100vh;
 }
 
 /* SCROLLVIEW */
 .scrollView {
   position: fixed;
-  background-color: white;
   width: 70vw;
   height: 100vh;
   overflow: hidden;
@@ -58,72 +39,126 @@ body {
 //   transform: $property;
 // }
 
-@for $i from 1 through 6 {
-  .scrollView > *:nth-child(#{$i}) {
-    //background: hsl($i * 50, 50%, 50%);
-    background-color: rgba(255, 255, 255, 1);
-    backdrop-filter: blur(10px);
-    opacity: 1;
+// @for $i from 1 through 6 {
+//   .scrollView > *:nth-child(#{$i}) {
+//     background: hsl($i * 200, 50%, 50%);
+//   }
+//   // .scrollView *:nth-child(#{$i}):hover {
+//   //   color: hsl($i * 50, 50%, 50%);
+//   // }
+// }
+
+.scrollView > *:nth-child(1) {
+  h1 {
+    color: #fca92e;
   }
-  // .scrollView *:nth-child(#{$i}):hover {
-  //   color: hsl($i * 50, 50%, 50%);
-  // }
+  background-color: #af70ff;
+}
+.scrollView > *:nth-child(2) {
+  background-color: #ff0000;
+  h1 {
+    color: #c4c4c4;
+  }
+}
+.scrollView > *:nth-child(3) {
+  background-color: pink;
+}
+.scrollView > *:nth-child(4) {
+  background-color: #c4c4c4;
+}
+.scrollView > *:nth-child(5) {
+  background-color: #af70ff;
+}
+.scrollView > *:nth-child(6) {
+  background-color: blanchedalmond;
 }
 
 .scrollView > * {
   box-shadow: 0px -10px 20px 4px rgba(50, 50, 50, 0.2);
   position: absolute;
-  width: 70vw;
+  width: 66vw;
   height: 100vh;
   margin: 0;
-  padding: 0;
-  transform-origin: top;
-}
+  padding: 2vw;
+  transform-origin: top left;
 
-.scrollView > * > div {
-  padding: 3%;
-}
-
-.scrollView > * > div {
-  * {
-    margin: 1%;
+  button {
+    position: sticky;
+    float: right;
+    font-size: 3vmin;
+    border: 3px solid #1868b3;
+    padding: 11px 16px;
+    border-radius: 22px;
+    transform-origin: center center;
+    background-color: transparent;
+    transition: border-color 0.2s ease-in-out;
+    min-width: 13px;
+    font-size: 17px;
+    letter-spacing: -0.022em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
+
+  button:hover {
+    border-color: #1868b35f;
+  }
+}
+
+.scrollView > * > div {
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  //h1 for main title
+  //h2 for group title (job/duke)
+  //h3 for group subtitle
   h1 {
+    font-family: "bold";
     font-size: 6vmin;
-    font-family: "pxBold";
+    margin: 0;
+  }
+  h2 {
+    margin-left: 1vw;
+    font-size: 4vmin;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  h3 {
+    margin-left: 1.5vw;
+    font-size: 3vmin;
+    margin-bottom: 0;
   }
   p {
     font-size: 3vmin;
   }
-  h3 {
-    font-size: 4vmin;
-    font-family: "pxBold";
-  }
-  h4 {
-    font-family: "pxRegular";
-    font-size: 3.5vmin;
-    margin-left: 3%;
-  }
-  h2 {
-    font-size: 4vmin;
-    font-family: "pxBold";
-  }
-  ul > p {
-    margin-left: 0;
-    padding-left: 0;
+  ul {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1vw;
+    p {
+      margin: 0%;
+      padding: 0;
+    }
   }
   li {
+    margin-left: 1vw;
     font-size: 3vmin;
   }
   li::before {
     content: "• ";
-    font-family: "pxLight";
   }
 }
 
 .active {
-  width: 70vw;
-  height: 100vh;
+  h1 {
+    padding-top: 5vh;
+  }
+  width: 66vw;
+  height: calc(100vh - 4vw);
+  margin: 0;
+  border: none;
   transform: translateY(0px);
   overflow-y: scroll;
   scrollbar-width: 10px;
@@ -151,21 +186,23 @@ body {
   height: 100vh;
   margin-left: 70vw;
   width: 30vw;
-  background-color: wheat;
+  background-color: #1868b3;
+  color: whitesmoke;
+  border-color: whitesmoke;
 }
 
 .sidebar > h1,
 .contact > h1 {
   font-size: 5vw;
-  font-family: "pxBold";
   position: absolute;
   right: 2vw;
   text-align: right;
+  font-family: "bold";
+}
 
-  span {
-    word-break: break-all;
-    font-family: "pxLight";
-  }
+a {
+  text-decoration: underline;
+  color: black;
 }
 
 .contactBox {
@@ -180,39 +217,33 @@ body {
 
   a {
     font-size: 2vw;
-    color: black;
     text-decoration: none;
     padding: 0;
     margin: 0;
+    color: whitesmoke;
   }
   h1 {
     font-size: 4vw;
-    font-family: "pxRegular";
-
-    span {
-      font-family: "pxScreen";
-    }
   }
   h3 {
     text-align: center;
-    vertical-align: middle;
     font-size: 6vmin;
   }
 
   > * {
     padding: 5%;
     margin: 0;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    border-top: 1px solid;
+    border-left: 1px solid;
   }
 
   > *:nth-child(even) {
-    border-right: 1px solid black;
+    border-right: 1px solid;
   }
 
   > *:last-child,
   > *:nth-last-child(2) {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
   }
 
   > *:nth-child(1) {
@@ -243,17 +274,18 @@ body {
   .scrollView {
     width: 100vw;
     > * {
-      width: 100vw;
+      width: 96vw;
     }
   }
   .sidebar {
     display: none;
   }
+  .contact {
+    display: inline;
+  }
 }
 @media (min-aspect-ratio: 5/4) {
-  .scrollView {
-    > *:last-child {
-      display: none;
-    }
+  .contact {
+    display: none;
   }
 }

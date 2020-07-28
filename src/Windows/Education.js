@@ -12,14 +12,14 @@ const Education = ({ active, close }) => {
             close();
           }}
         >
-          Active
+          CLOSE
         </button>
       )}
       <div>
         <RoughNotation
           onMouseEnter={() => setCircle(true)}
           onMouseLeave={() => setCircle(false)}
-          type="circle"
+          type="underline"
           color="red"
           show={circle}
           strokeWidth={4}
@@ -28,7 +28,7 @@ const Education = ({ active, close }) => {
         </RoughNotation>
       </div>
 
-      <h3>Duke University</h3>
+      <h2>Duke University</h2>
       <ul>
         <li>Expected graduation in May 2023</li>
         <li>
@@ -37,7 +37,7 @@ const Education = ({ active, close }) => {
         </li>
         <li>3.8 GPA</li>
       </ul>
-      <h4>Coursework</h4>
+      <h3>Coursework</h3>
       <ul>
         <li>
           Computer Science: Data Structures & Algorithms, Computer Architecture
@@ -48,7 +48,7 @@ const Education = ({ active, close }) => {
         <li>Statistics: Data Science, using R</li>
         <li>Innovation & Entrepreneurship: Innovator's Workshop</li>
       </ul>
-      <h4>Activities and Societies</h4>
+      <h3>Activities and Societies</h3>
       <ul>
         <li>Duke Student Founders</li>
         <li>Delta Sigma Pi Business Fraternity</li>
@@ -57,7 +57,7 @@ const Education = ({ active, close }) => {
         <li>Sigma Phi Epsilon</li>
         <li>Jewish Learning Fellowship</li>
       </ul>
-      <h3>Brentwood High School</h3>
+      <h2>Brentwood High School</h2>
       <ul>
         <li>Graduated Cum Laude in 2019</li>
       </ul>

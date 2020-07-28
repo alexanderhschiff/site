@@ -10,11 +10,11 @@ const Skils = ({ active, close }) => {
             close();
           }}
         >
-          Active
+          CLOSE
         </button>
       )}
       <h1>Skills</h1>
-      <h3>Technical</h3>
+      <h2>Technical</h2>
       <ul>
         <li>
           Proficient in Java, SwiftUI iOS App Development, Web Development
@@ -22,11 +22,11 @@ const Skils = ({ active, close }) => {
         </li>
         <li>Knowledge in Python & C</li>
       </ul>
-      <h3>Language</h3>
+      <h2>Language</h2>
       <ul>
         <li>Proficient in Spanish</li>
       </ul>
-      <h3>Interests</h3>
+      <h2>Interests</h2>
       <ul>
         <li>Running (ran my first half-marathon last year)</li>
         <li>Cooking (auditioned for MasterChef Junior)</li>

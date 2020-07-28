@@ -10,12 +10,12 @@ const Projects = ({ active, close }) => {
             close();
           }}
         >
-          Active
+          CLOSE
         </button>
       )}
       <h1>Projects</h1>
 
-      <h4>App Developer, Shoo - Stop Interruptions</h4>
+      <h2>App Developer, Shoo - Stop Interruptions</h2>
 
       <ul>
         <p>Released June 2020</p>
@@ -28,14 +28,13 @@ const Projects = ({ active, close }) => {
           friends, push notifications, and more
         </li>
         <li>
-          <a /*style="color: black;" href="https://www.shoo.app" target="_blank" */
-          >
+          <a href="https://www.shoo.app" target="_blank">
             Download
           </a>
         </li>
       </ul>
 
-      <h4>Team Leader, Tesla Consulting Competition</h4>
+      <h2>Team Leader, Tesla Consulting Competition</h2>
       <ul>
         <p>April 2019</p>
         <li>
@@ -56,7 +55,7 @@ const Projects = ({ active, close }) => {
         </li>
       </ul>
 
-      <h4>Team Leader, Netflix and Bain & Co. Consulting Competition</h4>
+      <h2>Team Leader, Netflix and Bain & Co. Consulting Competition</h2>
       <ul>
         <p>May 2018</p>
         <li>

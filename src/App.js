@@ -10,14 +10,26 @@ import Skils from "./Windows/Skills";
 import Contact from "./Windows/Contact";
 
 const App = () => {
-  const initialCoords = [
-    { id: "about", y: 1, z: 1000, active: false },
-    { id: "education", y: 150, z: 1001, active: false },
-    { id: "work", y: 300, z: 1002, active: false },
-    { id: "projects", y: 450, z: 1003, active: false },
-    { id: "skills", y: 600, z: 1004, active: false },
-    { id: "contact", y: 750, z: 1005, active: false },
-  ];
+  var ids = ["about", "education", "work", "projects", "skills"];
+  var i = -1;
+  const contactShown = window.innerHeight / window.innerWidth > 4 / 5;
+  if (contactShown) {
+    ids.push("contact");
+  }
+  const height = window.innerHeight / ids.length;
+  const initialCoords = ids.map((id) => {
+    i++;
+    return { id: id, y: i * height, z: 1000 + i, active: false };
+  });
+
+  // [
+  //   { id: "about", y: 0, z: 1000, active: false },
+  //   { id: "education", y: 0, z: 1001, active: false },
+  //   { id: "work", y: 0, z: 1002, active: false },
+  //   { id: "projects", y: 0, z: 1003, active: false },
+  //   { id: "skills", y: 0, z: 1004, active: false },
+  //   { id: "contact", y: 0, z: 1005, active: false },
+  // ];
 
   const renderSwitch = (id, active) => {
     switch (id) {
@@ -66,9 +78,9 @@ const App = () => {
 
   const [start, setStart] = useState(0);
   const [offset, setOffset] = useState(0);
-  const [wheelBool, setWheel] = useState(false);
+
   const touchstart = (e) => {
-    setWheel(false);
+    // setWheel(false);
     setStart(e.touches[0].pageY);
   };
 
@@ -78,10 +90,9 @@ const App = () => {
   };
 
   const yScroll = (e, y) => {
-    if (wheelBool) {
-      return y - (y * 0.7 + window.innerHeight * 0.5) * 0.001 * e.deltaY;
-    }
-    return y - offset;
+    return (
+      y - (y * 0.2 + window.innerHeight * 0.5) * 0.001 * (e.deltaY + offset)
+    );
   };
 
   const scroll = (e) => {
@@ -93,12 +104,11 @@ const App = () => {
     });
 
     if (!active) {
-      setWheel(true);
       e.preventDefault();
+
       const newCoords = coords.map((item) => {
         //hit the top, send to the bottom (and highest z)
-        // console.log(item.id + item.y);
-        if (item.y < -100) {
+        if (item.y < -height) {
           return {
             id: item.id,
             y: window.innerHeight,
@@ -106,11 +116,12 @@ const App = () => {
             active: item.active,
           };
         }
+
         //hit the bottom, send to the top
         if (item.y > window.innerHeight) {
           return {
             id: item.id,
-            y: -100,
+            y: -height,
             z: item.z - 10,
             active: item.active,
           };
@@ -123,7 +134,6 @@ const App = () => {
           active: item.active,
         };
       });
-
       setCoords(newCoords);
     }
   };

@@ -17,18 +17,18 @@ const Contact = ({ active, close }) => {
             close();
           }}
         >
-          Active
+          CLOSE
         </button>
       )}
       <div className="contactBox">
         <h1 style={{ margin: "0", padding: "5%" }}>Contact</h1>
-        <h1 style={{ margin: "0", padding: "5%" }}>&#9759;</h1>
+        <h1 className="rotate" style={{ margin: "0", padding: "5%" }}></h1>
         <div style={{ margin: "0", padding: "5%" }}>
           <RoughNotation
             onMouseEnter={() => setResume(true)}
             onMouseLeave={() => setResume(false)}
             type="circle"
-            color="red"
+            color="#ef4e2b"
             show={resume}
             padding={[18, 13, 5, 13]}
             strokeWidth={4}
@@ -46,7 +46,7 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setLinkedIn(true)}
             onMouseLeave={() => setLinkedIn(false)}
             type="underline"
-            color="green"
+            color="#f8f1e9"
             show={linkedin}
             padding={4}
             strokeWidth={4}
@@ -64,8 +64,8 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setGitHub(true)}
             onMouseLeave={() => setGitHub(false)}
             type="highlight"
-            color="yellow"
             padding={4}
+            color="#003847"
             show={github}
           >
             <a href="https://github.com/alexanderhschiff" target="_blank">
@@ -78,7 +78,7 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setMail(true)}
             onMouseLeave={() => setMail(false)}
             type="box"
-            color="blue"
+            color="#f07b75"
             show={mail}
             padding={[15, 10, 5, 10]}
             strokeWidth={4}

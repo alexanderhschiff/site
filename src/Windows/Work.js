@@ -10,13 +10,13 @@ const Work = ({ active, close }) => {
             close();
           }}
         >
-          Active
+          CLOSE
         </button>
       )}
       <h1>Work</h1>
       <h2>Software Engineering Intern, IBM</h2>
       <ul>
-        <p>Remote - Summer 2020</p>
+        <p>Remote &#8594; Summer 2020</p>
         <li>
           Built out a React web application with partnering fintech startup
           Wayapay
@@ -27,19 +27,19 @@ const Work = ({ active, close }) => {
       </ul>
 
       <h2>
-        Engineering Intern, Ring
-        <i>(aquired by Amazon)</i>
+        Engineering Intern, Ring <span>(aquired by Amazon)</span>
       </h2>
       <ul>
-        <p>Los Angeles, CA - Summer 2017</p>
+        <p>Los Angeles, CA &#8594; Summer 2017</p>
         <li>
           Collaborated with software development teams to find and fix bugs
         </li>
+        <li>Tested products with the QA team</li>
       </ul>
 
       <h2>Counselor & Lifeguard, Camp Manitou</h2>
       <ul>
-        <p>Oakland, Maine - Summers of 2018 and 2019</p>
+        <p>Oakland, Maine &#8594; Summers of 2018 and 2019</p>
         <li>Lived with and cared for a bunk of 15 nine-year-olds</li>
         <li>
           Taught waterskiing and collaborated with the team of lifeguards to
