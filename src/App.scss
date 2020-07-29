@@ -21,7 +21,9 @@
 
 body {
   font-family: "regular";
+  color: #222233;
   margin: 0;
+  background-color: #efe1d0;
 }
 
 .main {
@@ -55,15 +57,13 @@ body {
 //   // }
 // }
 
-// .scrollView > *:nth-child(1) {
-//   h1 {
-//     color: #fca92e;
-//   }
-//   background-color: #af70ff;
-// }
+.scrollView > * {
+  h1:hover {
+    color: red;
+  }
+}
 
 .scrollView > * {
-  line-height: 300%;
   box-shadow: 0px -10px 20px 4px rgba(50, 50, 50, 0.2);
   position: absolute;
   width: 66vw;
@@ -71,7 +71,11 @@ body {
   margin: 0;
   padding: 2vw;
   transform-origin: top left;
-  background-color: rgb(255, 242, 217);
+  background-color: #efe1d0;
+
+  h1 {
+    transition: color 0.2s ease;
+  }
 
   button {
     color: white;
@@ -113,7 +117,7 @@ h2 {
   //h2 for group title (job/duke)
   //h3 for group subtitle
   h1 {
-    font-size: 6vmin;
+    font-size: 8vmin;
     margin: 0;
   }
   h2 {
@@ -155,6 +159,9 @@ h2 {
   h1 {
     padding-top: 5vh;
   }
+  h1:hover {
+    color: black;
+  }
   width: 66vw;
   height: calc(100vh - 4vw);
   margin: 0;
@@ -186,9 +193,7 @@ h2 {
   height: 100vh;
   margin-left: 70vw;
   width: 30vw;
-  background-color: #1868b3;
-  color: whitesmoke;
-  border-color: whitesmoke;
+  background-color: #355891;
 }
 
 .sidebar > h1,
@@ -198,6 +203,7 @@ h2 {
   right: 2vw;
   text-align: right;
   font-family: "bold";
+  color: #f7dcc3;
 }
 
 a {
@@ -221,16 +227,20 @@ h4 {
   grid-template-rows: 4;
   grid-template-columns: 4;
   margin: 0;
+  color: #f7dcc3;
 
   a {
     font-size: 2vw;
     text-decoration: none;
     padding: 0;
     margin: 0;
-    color: whitesmoke;
+    color: #f7dcc3;
+    padding: 5%;
   }
   h1 {
     font-size: 4vw;
+    margin-left: 0;
+    padding-left: 2%;
   }
   h3 {
     text-align: center;
@@ -289,6 +299,68 @@ h4 {
   }
   .contact {
     display: inline;
+  }
+  .scrollView > * > div {
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    //h1 for main title
+    //h2 for group title (job/duke)
+    //h3 for group subtitle
+    h1 {
+      font-size: 9vmin;
+      margin: 0;
+      padding-bottom: 8px;
+    }
+    h2 {
+      margin-left: 1vw;
+      font-size: 7vmin;
+      padding: 0;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-family: "light";
+      margin-left: 1.5vw;
+      font-size: 6vmin;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 5vmin;
+    }
+    ul {
+      padding: 0;
+      margin-top: 0;
+      margin-left: 1vw;
+      p {
+        margin: 0%;
+        padding: 0;
+      }
+    }
+    li {
+      line-height: normal;
+      margin-left: 1vw;
+      padding-top: 0.5vw;
+      font-size: 6vmin;
+    }
+    li::before {
+      content: "• ";
+    }
+    .contactBox {
+      position: absolute;
+      top: 2vh;
+      color: #222233;
+      width: 66vw;
+      h1 {
+        font-size: 8vmin;
+        margin: 0;
+      }
+      a {
+        color: #222233;
+        font-size: 6vmin;
+      }
+    }
+    .contact {
+      font-size: 8vmin;
+    }
   }
 }
 @media (min-aspect-ratio: 5/4) {

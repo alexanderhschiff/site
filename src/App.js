@@ -10,26 +10,17 @@ import Skils from "./Windows/Skills";
 import Contact from "./Windows/Contact";
 
 const App = () => {
+  const mobile = window.innerHeight / window.innerWidth > 4 / 5;
   var ids = ["about", "education", "work", "projects", "skills"];
   var i = -1;
-  const contactShown = window.innerHeight / window.innerWidth > 4 / 5;
-  if (contactShown) {
+  if (mobile) {
     ids.push("contact");
   }
-  const height = (1.2 * window.innerHeight) / ids.length;
+  const height = window.innerHeight / ids.length;
   const initialCoords = ids.map((id) => {
     i++;
     return { id: id, y: i * height, z: 1000 + i, active: false };
   });
-
-  // [
-  //   { id: "about", y: 0, z: 1000, active: false },
-  //   { id: "education", y: 0, z: 1001, active: false },
-  //   { id: "work", y: 0, z: 1002, active: false },
-  //   { id: "projects", y: 0, z: 1003, active: false },
-  //   { id: "skills", y: 0, z: 1004, active: false },
-  //   { id: "contact", y: 0, z: 1005, active: false },
-  // ];
 
   const renderSwitch = (id, active) => {
     switch (id) {
@@ -50,7 +41,7 @@ const App = () => {
           <Contact
             active={active}
             close={() => selected(id)}
-            style={{ top: "2vh" }}
+            className="topContact"
           ></Contact>
         );
     }
@@ -76,75 +67,57 @@ const App = () => {
     setCoords(newCoords);
   };
 
-  const [start, setStart] = useState(0);
-  const [offset, setOffset] = useState(0);
-
-  const touchstart = (e) => {
-    // setWheel(false);
-    setStart(e.touches[0].pageY);
-  };
-
-  const touchmove = (e) => {
-    setOffset(start.y - e.touches[0].pageY);
-    scroll(e);
-  };
-
   const yScroll = (e, y) => {
-    return (
-      y - (y * 0.2 + window.innerHeight * 0.5) * 0.001 * (e.deltaY + offset)
-    );
+    return y - (y * 0.2 + window.innerHeight * 0.5) * 0.001 * e.deltaY;
   };
 
   const scroll = (e) => {
-    var active = false;
-    coords.forEach((item) => {
-      if (item.active) {
-        active = true;
-      }
-    });
-
-    if (!active) {
-      e.preventDefault();
-
-      const newCoords = coords.map((item) => {
-        //hit the top, send to the bottom (and highest z)
-        if (item.y < -height) {
-          return {
-            id: item.id,
-            y: window.innerHeight,
-            z: item.z + 10,
-            active: item.active,
-          };
+    if (!mobile) {
+      var active = false;
+      coords.forEach((item) => {
+        if (item.active) {
+          active = true;
         }
-
-        //hit the bottom, send to the top
-        if (item.y > window.innerHeight) {
-          return {
-            id: item.id,
-            y: -height,
-            z: item.z - 10,
-            active: item.active,
-          };
-        }
-        //regular scrolling
-        return {
-          id: item.id,
-          y: yScroll(e, item.y),
-          z: item.z,
-          active: item.active,
-        };
       });
-      setCoords(newCoords);
+
+      if (!active) {
+        e.preventDefault();
+
+        const newCoords = coords.map((item) => {
+          //hit the top, send to the bottom (and highest z)
+          if (item.y < -height) {
+            return {
+              id: item.id,
+              y: window.innerHeight,
+              z: item.z + 10,
+              active: item.active,
+            };
+          }
+
+          //hit the bottom, send to the top
+          if (item.y > window.innerHeight) {
+            return {
+              id: item.id,
+              y: -height,
+              z: item.z - 10,
+              active: item.active,
+            };
+          }
+          //regular scrolling
+          return {
+            id: item.id,
+            y: yScroll(e, item.y),
+            z: item.z,
+            active: item.active,
+          };
+        });
+        setCoords(newCoords);
+      }
     }
   };
 
   return (
-    <div
-      onWheel={scroll}
-      onTouchStart={touchstart}
-      onTouchMove={touchmove}
-      className="main"
-    >
+    <div onWheel={scroll} className="main">
       <div className="scrollView">
         {coords.map((item) => (
           <div

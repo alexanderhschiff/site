@@ -19,7 +19,12 @@ const Education = ({ active, close }) => {
       </div>
       <RoughNotationGroup show={active}>
         <h2>
-          <RoughNotation type="highlight" color="#1868b3" strokeWidth={3}>
+          <RoughNotation
+            type="highlight"
+            color="#1868b3"
+            strokeWidth={3}
+            multiline={true}
+          >
             Duke University
           </RoughNotation>
         </h2>
@@ -32,6 +37,7 @@ const Education = ({ active, close }) => {
               color="red"
               strokeWidth={2}
               padding={0}
+              multiline={true}
             >
               Computer Science
             </RoughNotation>
@@ -56,20 +62,25 @@ const Education = ({ active, close }) => {
         <ul>
           <li>
             Computer Science:{" "}
-            <RoughNotation type="box">
+            <RoughNotation type="box" multiline={true}>
               Data Structures & Algorithms
             </RoughNotation>
             , Computer Architecture
           </li>
           <li>
-            <RoughNotation type="circle" color="green" padding={4}>
+            <RoughNotation
+              type="circle"
+              color="green"
+              padding={4}
+              multiline={true}
+            >
               Linear Algebra
             </RoughNotation>
             : Matrices & Vector Spaces, Python-based applied lab
           </li>
           <li>
             Statistics:{" "}
-            <RoughNotation type="highlight" color="pink">
+            <RoughNotation type="highlight" color="pink" multiline={true}>
               Data Science, using R
             </RoughNotation>
           </li>

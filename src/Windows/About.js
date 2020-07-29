@@ -18,7 +18,12 @@ const About = ({ active, close }) => {
       <RoughNotationGroup show={active}>
         <p>
           I'm a sophomore at{" "}
-          <RoughNotation type="circle" padding={4} color="blue">
+          <RoughNotation
+            type="circle"
+            padding={4}
+            color="blue"
+            multiline={true}
+          >
             Duke University
           </RoughNotation>{" "}
           studying Computer Science, Innovation & Entrepreneurship, and

@@ -20,11 +20,16 @@ const Skils = ({ active, close }) => {
         <ul>
           <li>
             Proficient in{" "}
-            <RoughNotation type="underline" strokeWidth={4}>
+            <RoughNotation type="underline" strokeWidth={4} padding={0}>
               Java
             </RoughNotation>
             , SwiftUI{" "}
-            <RoughNotation type="box" padding={10} color="navy">
+            <RoughNotation
+              type="box"
+              padding={10}
+              color="navy"
+              multiline={true}
+            >
               iOS App Development
             </RoughNotation>
             ,

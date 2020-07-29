@@ -16,12 +16,28 @@ const Work = ({ active, close }) => {
       )}
       <h1>Work</h1>
       <RoughNotationGroup show={active}>
-        <h2>Software Engineering Intern, IBM</h2>
+        <h2>
+          Software Engineering Intern,{" "}
+          <RoughNotation type="highlight" color="lightblue">
+            IBM
+          </RoughNotation>
+        </h2>
         <ul>
           <p>Remote &#8594; Summer 2020</p>
           <li>
             Built out a React web application with partnering fintech startup
             Wayapay
+          </li>
+          <li>
+            <RoughNotation
+              type="underline"
+              color="red"
+              strokeWidth={4}
+              multiline={true}
+            >
+              Transitioned Java backend
+            </RoughNotation>{" "}
+            from AWS to IBM Cloud with partnering healthtech startup Galen Data
           </li>
           <li>
             Supported startup recruitment for the IBM Hyper Protect Accelerator
@@ -34,7 +50,10 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
-            Collaborated with software development teams to find and fix bugs
+            <RoughNotation type="circle" padding={6} color="green">
+              Collaborated{" "}
+            </RoughNotation>
+            with software development teams to find and fix bugs
           </li>
           <li>Tested products with the QA team</li>
         </ul>
