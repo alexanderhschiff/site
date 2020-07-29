@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import "../App.scss";
+import animoji from "../Images/animoji.png";
 
 const ContactPage = ({ active, close }) => {
   //contact highlights
@@ -27,7 +28,7 @@ const ContactPage = ({ active, close }) => {
           </RoughNotation>
         </h1>
         <hr></hr>
-        <h1 className="rotate"></h1>
+        <img src={animoji} style={{ width: "50%", paddingLeft: "25%" }} />
         <div className="grid">
           <a
             href="https://drive.google.com/file/d/1j_wG2_nEnpp5biTORhysEWmw978wd99C/view?usp=sharing"

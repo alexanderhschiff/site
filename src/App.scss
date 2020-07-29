@@ -330,69 +330,79 @@ h4 {
   .sidebar {
     display: none;
   }
-  .scrollView > * > div {
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
-    //h1 for main title
-    //h2 for group title (job/duke)
-    //h3 for group subtitle
-    h1 {
-      font-size: 9vmin;
-      margin: 0;
-      padding-bottom: 8px;
+
+  .active {
+    div {
+      padding: 5%;
     }
-    h2 {
-      margin-left: 1vw;
-      font-size: 7vmin;
-      padding: 0;
-      margin-bottom: 0;
-    }
-    h3 {
-      font-family: "light";
-      margin-left: 1.5vw;
-      font-size: 6vmin;
-      margin-bottom: 0;
-    }
-    p {
-      font-size: 5vmin;
-    }
-    ul {
-      padding: 0;
-      margin-top: 0;
-      margin-left: 1vw;
-      p {
-        margin: 0%;
-        padding: 0;
-      }
-    }
-    li {
-      line-height: normal;
-      margin-left: 1vw;
-      padding-top: 0.5vw;
-      font-size: 6vmin;
-    }
-    li::before {
-      content: "• ";
-    }
-    // .contactBox {
-    //   position: absolute;
-    //   top: 2vh;
-    //   color: #222233;
-    //   width: 66vw;
-    //   h1 {
-    //     font-size: 8vmin;
-    //     margin: 0;
-    //   }
-    //   a {
-    //     color: #222233;
-    //     font-size: 6vmin;
-    //   }
-    // }
-    // .contact {
-    //   font-size: 8vmin;
-    // }
   }
+
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  //h1 for main title
+  //h2 for group title (job/duke)
+  //h3 for group subtitle
+  h1 {
+    font-size: 9vmin;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  h2 {
+    margin-left: 1vw;
+    font-size: 7vmin;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-family: "light";
+    margin-left: 1.5vw;
+    font-size: 6vmin;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 5vmin;
+  }
+  ul {
+    padding: 0;
+    margin-top: 0;
+    margin-left: 1vw;
+    p {
+      margin: 0%;
+      padding: 0;
+    }
+  }
+  li {
+    line-height: normal;
+    margin-left: 1vw;
+    padding-top: 0.5vw;
+    font-size: 6vmin;
+  }
+  h4 {
+    padding-left: 10%;
+    padding-bottom: 5vh;
+  }
+  // li::before {
+  //   content: "• ";
+  // }
+  // .contactBox {
+  //   position: absolute;
+  //   top: 2vh;
+  //   color: #222233;
+  //   width: 66vw;
+  //   h1 {
+  //     font-size: 8vmin;
+  //     margin: 0;
+  //   }
+  //   a {
+  //     color: #222233;
+  //     font-size: 6vmin;
+  //   }
+  // }
+  // .contact {
+  //   font-size: 8vmin;
+  // }
 }
+
 @media (min-aspect-ratio: 5/4) {
   .contact {
     display: none;

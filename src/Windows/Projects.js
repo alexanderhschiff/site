@@ -19,7 +19,7 @@ const Projects = ({ active, close }) => {
           show={!active}
           type="highlight"
           iterations={4}
-          color="#0000ff7f"
+          color="#aaaaff7f"
         >
           Projects
         </RoughNotation>
