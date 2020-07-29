@@ -83,10 +83,11 @@ const Contact = ({ active, close }) => {
             padding={[15, 10, 5, 10]}
             strokeWidth={4}
           >
-            <a href="mailTo:alexanderschiff@icloud.com">Email Me</a>
+            <a href="mailTo:alexanderschiff@icloud.com">Email</a>
           </RoughNotation>
         </div>
       </div>
+      <h4>I built this site with React and published it with AWS Amplify.</h4>
     </div>
   );
 };

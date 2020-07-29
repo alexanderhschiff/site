@@ -16,7 +16,7 @@ const App = () => {
   if (contactShown) {
     ids.push("contact");
   }
-  const height = window.innerHeight / ids.length;
+  const height = (1.2 * window.innerHeight) / ids.length;
   const initialCoords = ids.map((id) => {
     i++;
     return { id: id, y: i * height, z: 1000 + i, active: false };
