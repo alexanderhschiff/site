@@ -8,6 +8,7 @@ import Projects from "./Windows/Projects";
 import About from "./Windows/About";
 import Skils from "./Windows/Skills";
 import Contact from "./Windows/Contact";
+import ContactPage from "./Windows/ContactPage";
 
 const App = () => {
   const mobile = window.innerHeight / window.innerWidth > 4 / 5;
@@ -38,11 +39,7 @@ const App = () => {
         return <Skils active={active} close={() => selected(id)}></Skils>;
       case "contact":
         return (
-          <Contact
-            active={active}
-            close={() => selected(id)}
-            className="topContact"
-          ></Contact>
+          <ContactPage active={active} close={() => selected(id)}></ContactPage>
         );
     }
   };

@@ -15,6 +15,7 @@ const Work = ({ active, close }) => {
         </button>
       )}
       <h1>Work</h1>
+      <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>
           Software Engineering Intern,{" "}

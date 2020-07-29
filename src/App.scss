@@ -23,7 +23,7 @@ body {
   font-family: "regular";
   color: #222233;
   margin: 0;
-  background-color: #efe1d0;
+  background-color: #fcf0e5;
 }
 
 .main {
@@ -59,26 +59,26 @@ body {
 
 .scrollView > * {
   h1:hover {
-    color: red;
+    color: #355891;
   }
 }
 
 .scrollView > * {
-  box-shadow: 0px -10px 20px 4px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px -20px 50px 24px rgba(50, 50, 50, 0.2);
   position: absolute;
   width: 66vw;
   height: 100vh;
   margin: 0;
   padding: 2vw;
   transform-origin: top left;
-  background-color: #efe1d0;
+  background-color: #fcf0e5;
 
   h1 {
     transition: color 0.2s ease;
   }
 
   button {
-    color: white;
+    color: #fcf0e5;
     position: sticky;
     float: right;
     font-size: 3vmin;
@@ -185,6 +185,10 @@ h2 {
   }
 }
 
+hr {
+  border: 0.2vh solid #222233;
+}
+
 /* SIDEBAR */
 .sidebar {
   z-index: 0;
@@ -203,7 +207,7 @@ h2 {
   right: 2vw;
   text-align: right;
   font-family: "bold";
-  color: #f7dcc3;
+  color: #fcf0e5;
 }
 
 a {
@@ -235,12 +239,10 @@ h4 {
     padding: 0;
     margin: 0;
     color: #f7dcc3;
-    padding: 5%;
+    padding: 10%;
   }
   h1 {
     font-size: 4vw;
-    margin-left: 0;
-    padding-left: 2%;
   }
   h3 {
     text-align: center;
@@ -286,6 +288,50 @@ h4 {
   }
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 2;
+  font-size: 5vmin;
+  text-decoration: none;
+
+  a:hover {
+    color: #222233;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 5%;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+
+  a:nth-child(even) {
+    border-right: 1px solid;
+  }
+
+  a:last-child,
+  a:nth-last-child(2) {
+    border-bottom: 1px solid;
+  }
+
+  :nth-child(1) {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+  :nth-child(2) {
+    grid-row: 1;
+    grid-column: span 1;
+  }
+
+  :nth-child(3),
+  :nth-child(4) {
+    grid-row: 2;
+    grid-column: span 1;
+  }
+}
+
 /*Mobile*/
 @media (max-aspect-ratio: 5/4) {
   .scrollView {
@@ -296,9 +342,6 @@ h4 {
   }
   .sidebar {
     display: none;
-  }
-  .contact {
-    display: inline;
   }
   .scrollView > * > div {
     // -webkit-background-clip: text;
@@ -344,23 +387,23 @@ h4 {
     li::before {
       content: "• ";
     }
-    .contactBox {
-      position: absolute;
-      top: 2vh;
-      color: #222233;
-      width: 66vw;
-      h1 {
-        font-size: 8vmin;
-        margin: 0;
-      }
-      a {
-        color: #222233;
-        font-size: 6vmin;
-      }
-    }
-    .contact {
-      font-size: 8vmin;
-    }
+    // .contactBox {
+    //   position: absolute;
+    //   top: 2vh;
+    //   color: #222233;
+    //   width: 66vw;
+    //   h1 {
+    //     font-size: 8vmin;
+    //     margin: 0;
+    //   }
+    //   a {
+    //     color: #222233;
+    //     font-size: 6vmin;
+    //   }
+    // }
+    // .contact {
+    //   font-size: 8vmin;
+    // }
   }
 }
 @media (min-aspect-ratio: 5/4) {

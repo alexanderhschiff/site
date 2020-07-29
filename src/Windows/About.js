@@ -15,6 +15,7 @@ const About = ({ active, close }) => {
         </button>
       )}
       <h1>About</h1>
+      <hr></hr>
       <RoughNotationGroup show={active}>
         <p>
           I'm a sophomore at{" "}

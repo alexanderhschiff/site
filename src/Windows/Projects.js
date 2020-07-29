@@ -15,6 +15,7 @@ const Projects = ({ active, close }) => {
         </button>
       )}
       <h1>Projects</h1>
+      <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>App Developer, Shoo - Stop Interruptions</h2>
 

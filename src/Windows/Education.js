@@ -14,9 +14,8 @@ const Education = ({ active, close }) => {
           CLOSE
         </button>
       )}
-      <div>
-        <h1>Education</h1>
-      </div>
+      <h1>Education</h1>
+      <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>
           <RoughNotation
