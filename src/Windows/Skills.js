@@ -14,7 +14,16 @@ const Skils = ({ active, close }) => {
           CLOSE
         </button>
       )}
-      <h1>Skills</h1>
+      <h1>
+        <RoughNotation
+          show={!active}
+          type="underline"
+          color="green"
+          strokeWidth={5}
+        >
+          Skills
+        </RoughNotation>
+      </h1>
       <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>Technical</h2>

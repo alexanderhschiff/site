@@ -14,13 +14,17 @@ const Education = ({ active, close }) => {
           CLOSE
         </button>
       )}
-      <h1>Education</h1>
+      <h1>
+        <RoughNotation show={!active} type="highlight" color="#ff00007f">
+          Education
+        </RoughNotation>
+      </h1>
       <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>
           <RoughNotation
             type="highlight"
-            color="#1868b3"
+            color="#0000ff7f"
             strokeWidth={3}
             multiline={true}
           >
@@ -79,7 +83,7 @@ const Education = ({ active, close }) => {
           </li>
           <li>
             Statistics:{" "}
-            <RoughNotation type="highlight" color="pink" multiline={true}>
+            <RoughNotation type="highlight" color="#FFC0CB7f" multiline={true}>
               Data Science, using R
             </RoughNotation>
           </li>

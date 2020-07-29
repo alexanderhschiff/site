@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import "../App.scss";
+import animoji from "../Images/animoji.png";
 
 const Contact = ({ active, close }) => {
   //contact highlights
@@ -22,8 +23,7 @@ const Contact = ({ active, close }) => {
       )}
       <div className="contactBox">
         <h1>Contact</h1>
-        <h1 className="rotate"></h1>
-
+        <img src={animoji} />
         <a
           href="https://drive.google.com/file/d/1j_wG2_nEnpp5biTORhysEWmw978wd99C/view?usp=sharing"
           target="_blank"
@@ -32,20 +32,20 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setResume(true)}
             onMouseLeave={() => setResume(false)}
             type="circle"
-            color="#ef4e2b"
+            color="blue"
             show={resume}
             strokeWidth={4}
+            padding={5}
           >
             Resume
           </RoughNotation>
         </a>
-
         <a href="https://www.linkedin.com/in/alexanderschiff" target="_blank">
           <RoughNotation
             onMouseEnter={() => setLinkedIn(true)}
             onMouseLeave={() => setLinkedIn(false)}
             type="underline"
-            color="#f8f1e9"
+            color="red"
             show={linkedin}
             strokeWidth={4}
           >
@@ -57,7 +57,7 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setGitHub(true)}
             onMouseLeave={() => setGitHub(false)}
             type="highlight"
-            color="#003847"
+            color="#00ff227f"
             show={github}
           >
             GitHub
@@ -68,7 +68,7 @@ const Contact = ({ active, close }) => {
             onMouseEnter={() => setMail(true)}
             onMouseLeave={() => setMail(false)}
             type="box"
-            color="#f07b75"
+            color="orange"
             show={mail}
             strokeWidth={4}
           >

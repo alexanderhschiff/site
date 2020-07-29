@@ -14,7 +14,16 @@ const Projects = ({ active, close }) => {
           CLOSE
         </button>
       )}
-      <h1>Projects</h1>
+      <h1>
+        <RoughNotation
+          show={!active}
+          type="highlight"
+          iterations={4}
+          color="#0000ff7f"
+        >
+          Projects
+        </RoughNotation>
+      </h1>
       <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>App Developer, Shoo - Stop Interruptions</h2>
@@ -58,7 +67,7 @@ const Projects = ({ active, close }) => {
             competition
           </li>
           <li>
-            <RoughNotation type="highlight" color="red">
+            <RoughNotation type="highlight" color="#ff00007f">
               <a
                 href="https://drive.google.com/open?id=1tV3FozJGYltm5tUP7nt17mJzFhFbaPPT"
                 target="_blank"

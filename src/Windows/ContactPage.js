@@ -21,7 +21,11 @@ const ContactPage = ({ active, close }) => {
         </button>
       )}
       <div>
-        <h1>Contact</h1>
+        <h1>
+          <RoughNotation show={!active} type="box" padding={10} color="pink">
+            Contact
+          </RoughNotation>
+        </h1>
         <hr></hr>
         <h1 className="rotate"></h1>
         <div className="grid">
@@ -58,7 +62,7 @@ const ContactPage = ({ active, close }) => {
               onMouseEnter={() => setGitHub(true)}
               onMouseLeave={() => setGitHub(false)}
               type="highlight"
-              color="green"
+              color="#00ff227f"
               show={github}
             >
               GitHub

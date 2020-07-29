@@ -1,9 +1,3 @@
-* {
-  overflow-y: hidden;
-}
-
-// @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
-
 @font-face {
   src: url("./Fonts/MessinaSansWebTrial-Black.woff2");
   font-family: "bold";
@@ -58,21 +52,18 @@ body {
 // }
 
 .scrollView > * {
-  h1:hover {
-    color: #355891;
-  }
-}
-
-.scrollView > * {
-  box-shadow: 0px -20px 50px 24px rgba(50, 50, 50, 0.2);
+  box-shadow: 0px -2vh 5vh 2vh rgba(50, 50, 50, 0.2);
   position: absolute;
   width: 66vw;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 2vw;
   transform-origin: top left;
   background-color: #fcf0e5;
 
+  ul:last-child {
+    padding-bottom: 20vh;
+  }
   h1 {
     transition: color 0.2s ease;
   }
@@ -121,14 +112,13 @@ h2 {
     margin: 0;
   }
   h2 {
-    margin-left: 1vw;
     font-size: 4vmin;
     padding: 0;
     margin-bottom: 0;
   }
   h3 {
     font-family: "light";
-    margin-left: 1.5vw;
+    margin-left: 0vw;
     font-size: 3vmin;
     margin-bottom: 0;
   }
@@ -150,17 +140,14 @@ h2 {
     padding-top: 0.5vw;
     font-size: 3vmin;
   }
-  li::before {
-    content: "• ";
-  }
+  // li::before {
+  //   content: "• ";
+  // }
 }
 
 .active {
   h1 {
     padding-top: 5vh;
-  }
-  h1:hover {
-    color: black;
   }
   width: 66vw;
   height: calc(100vh - 4vw);
@@ -231,7 +218,11 @@ h4 {
   grid-template-rows: 4;
   grid-template-columns: 4;
   margin: 0;
-  color: #f7dcc3;
+  color: #fcf0e5;
+
+  img {
+    width: 88.5%;
+  }
 
   a {
     font-size: 2vw;
@@ -294,10 +285,6 @@ h4 {
   grid-template-rows: 2;
   font-size: 5vmin;
   text-decoration: none;
-
-  a:hover {
-    color: #222233;
-  }
 
   a {
     text-decoration: none;

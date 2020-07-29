@@ -14,12 +14,22 @@ const Work = ({ active, close }) => {
           CLOSE
         </button>
       )}
-      <h1>Work</h1>
+      <h1>
+        <RoughNotation
+          show={!active}
+          type="bracket"
+          brackets={["right", "left"]}
+          color="orange"
+          strokeWidth={5}
+        >
+          Work
+        </RoughNotation>
+      </h1>
       <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>
           Software Engineering Intern,{" "}
-          <RoughNotation type="highlight" color="lightblue">
+          <RoughNotation type="highlight" color="#0000ff7f">
             IBM
           </RoughNotation>
         </h2>
