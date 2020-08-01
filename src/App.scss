@@ -70,9 +70,7 @@ body {
 
   button {
     color: #fcf0e5;
-    position: sticky;
     float: right;
-    font-size: 3vmin;
     border: 3px solid #1868b3;
     padding: 11px 16px;
     border-radius: 22px;
@@ -123,7 +121,7 @@ h2 {
     margin-bottom: 0;
   }
   p {
-    font-size: 3vmin;
+    font-size: 4vmin;
   }
   ul {
     padding: 0;
@@ -132,6 +130,8 @@ h2 {
     p {
       margin: 0%;
       padding: 0;
+      margin-left: -1vw;
+      font-size: 3vmin;
     }
   }
   li {
@@ -324,7 +324,60 @@ h4 {
   .scrollView {
     width: 100vw;
     > * {
-      width: 96vw;
+      padding: 2vh 4vw;
+      width: 92vw;
+    }
+    button {
+      font-size: 2vmin;
+      padding: 2%;
+    }
+  }
+
+  .scrollView > * > div {
+    p {
+      font-size: 2em;
+    }
+    //h1 for main title
+    //h2 for group title (job/duke)
+    //h3 for group subtitle
+    h1 {
+      font-size: 9vmin;
+      margin: 0;
+      padding-bottom: 8px;
+    }
+    h2 {
+      margin-left: 1vw;
+      font-size: 7vmin;
+      padding: 0;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-family: "light";
+      margin-left: 1.5vw;
+      font-size: 6vmin;
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding: 0;
+      margin-top: 0;
+      margin-left: 1vw;
+      p {
+        margin: 0%;
+        padding: 0;
+        font-size: 5vmin;
+      }
+    }
+    li {
+      line-height: normal;
+      margin-left: 6vw;
+      padding-top: 0.5vw;
+      font-size: 5vmin;
+    }
+    h4 {
+      bottom: 8vh;
+      padding-left: 10%;
+      padding-bottom: 5vh;
     }
   }
   .sidebar {
@@ -333,54 +386,13 @@ h4 {
 
   .active {
     div {
-      padding: 5%;
+      padding: 2%;
     }
   }
 
   // -webkit-background-clip: text;
   // -webkit-text-fill-color: transparent;
-  //h1 for main title
-  //h2 for group title (job/duke)
-  //h3 for group subtitle
-  h1 {
-    font-size: 9vmin;
-    margin: 0;
-    padding-bottom: 8px;
-  }
-  h2 {
-    margin-left: 1vw;
-    font-size: 7vmin;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  h3 {
-    font-family: "light";
-    margin-left: 1.5vw;
-    font-size: 6vmin;
-    margin-bottom: 0;
-  }
-  p {
-    font-size: 5vmin;
-  }
-  ul {
-    padding: 0;
-    margin-top: 0;
-    margin-left: 1vw;
-    p {
-      margin: 0%;
-      padding: 0;
-    }
-  }
-  li {
-    line-height: normal;
-    margin-left: 1vw;
-    padding-top: 0.5vw;
-    font-size: 6vmin;
-  }
-  h4 {
-    padding-left: 10%;
-    padding-bottom: 5vh;
-  }
+
   // li::before {
   //   content: "• ";
   // }

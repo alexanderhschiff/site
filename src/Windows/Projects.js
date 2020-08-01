@@ -50,7 +50,9 @@ const Projects = ({ active, close }) => {
 
           <li>
             <a href="https://www.shoo.app" target="_blank">
-              Download
+              <RoughNotation type="box" multiline={false}>
+                Download
+              </RoughNotation>
             </a>
           </li>
         </ul>
