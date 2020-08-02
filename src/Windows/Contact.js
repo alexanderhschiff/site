@@ -22,8 +22,7 @@ const Contact = ({ active, close }) => {
         </button>
       )}
       <div className="contactBox">
-        <h1>Contact</h1>
-        <img src={animoji} />
+        {/* <img src={animoji} /> */}
         <a
           href="https://drive.google.com/file/d/1j_wG2_nEnpp5biTORhysEWmw978wd99C/view?usp=sharing"
           target="_blank"
@@ -76,7 +75,14 @@ const Contact = ({ active, close }) => {
           </RoughNotation>
         </a>
       </div>
-      <h4>I built this site with React and published it with AWS Amplify.</h4>
+      <h4>
+        I built this site with React and published it with AWS Amplify.
+        Animation library from{" "}
+        <a style={{ color: "#222233" }} href="https://roughnotation.com">
+          Rough Notation
+        </a>
+        .
+      </h4>
     </div>
   );
 };
