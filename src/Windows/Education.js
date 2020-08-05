@@ -101,6 +101,9 @@ const Education = ({ active, close }) => {
         <h2>Brentwood High School</h2>
         <ul>
           <li>Graduated Cum Laude in 2019</li>
+          <li>4.49/4.0 Cumulative GPA</li>
+          <li>National Mertit Commended Scholar, National AP Scholar</li>
+          <li>ACT Score: 35</li>
         </ul>
       </RoughNotationGroup>
     </div>

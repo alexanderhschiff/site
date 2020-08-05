@@ -64,7 +64,7 @@ const Work = ({ active, close }) => {
             <RoughNotation type="circle" padding={6} color="green">
               Collaborated{" "}
             </RoughNotation>
-            with software development teams to find and fix bugs
+            with software and hardware engineering teams
           </li>
           <li>Tested products with the QA team</li>
         </ul>

@@ -43,7 +43,7 @@ const Projects = ({ active, close }) => {
               color="green"
               brackets={["left", "right"]}
             >
-              Incoroporated myriad accessibility features, dark mode, QR-code to
+              Incorporated myriad accessibility features, dark mode, QR-code to
               add friends, push notifications, and more
             </RoughNotation>
           </li>
@@ -87,7 +87,10 @@ const Projects = ({ active, close }) => {
             Conducted research to empathize with target audience and develop an
             ideal solution
           </li>
-          <li>Collaborated with consultants at Bain & Co. and UCLA students</li>
+          <li>
+            Closely collaborated with and learned from Bain & Company
+            consultants and UCLA students
+          </li>
         </ul>
       </RoughNotationGroup>
     </div>
