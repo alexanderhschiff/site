@@ -81,16 +81,16 @@ const ContactPage = ({ active, close }) => {
               Email
             </RoughNotation>
           </a>
+          <h4>
+            I built this site with React and published it with AWS Amplify.
+            Animation library from{" "}
+            <a style={{ color: "#222233" }} href="https://roughnotation.com">
+              Rough Notation
+            </a>
+            .
+          </h4>
         </div>
       </div>
-      <h4>
-        I built this site with React and published it with AWS Amplify.
-        Animation library from{" "}
-        <a style={{ color: "#222233" }} href="https://roughnotation.com">
-          Rough Notation
-        </a>
-        .
-      </h4>
     </div>
   );
 };

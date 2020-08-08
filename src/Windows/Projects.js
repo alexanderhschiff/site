@@ -82,7 +82,7 @@ const Projects = ({ active, close }) => {
 
         <h2>Team Leader, Netflix and Bain & Co. Consulting Competition</h2>
         <ul>
-          <p>May 2018</p>
+          <p>April - May 2018</p>
           <li>
             Conducted research to empathize with target audience and develop an
             ideal solution

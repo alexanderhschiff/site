@@ -34,7 +34,7 @@ const Contact = ({ active, close }) => {
             color="blue"
             show={resume}
             strokeWidth={4}
-            padding={5}
+            padding={10}
           >
             Resume
           </RoughNotation>
@@ -74,15 +74,14 @@ const Contact = ({ active, close }) => {
             Email
           </RoughNotation>
         </a>
+        <h4>
+          I built this site with React and published it with AWS Amplify.
+          Animation library from{" "}
+          <a href="https://roughnotation.com" target="_blank">
+            Rough Notation.
+          </a>
+        </h4>
       </div>
-      <h4>
-        I built this site with React and published it with AWS Amplify.
-        Animation library from{" "}
-        <a style={{ color: "#222233" }} href="https://roughnotation.com">
-          Rough Notation
-        </a>
-        .
-      </h4>
     </div>
   );
 };

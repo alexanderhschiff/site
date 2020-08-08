@@ -56,7 +56,8 @@ const Work = ({ active, close }) => {
         </ul>
 
         <h2>
-          Engineering Intern, Ring <span>(aquired by Amazon)</span>
+          Engineering Intern, Ring{" "}
+          <span style={{ fontWeight: 400 }}>(aquired by Amazon)</span>
         </h2>
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
@@ -66,7 +67,7 @@ const Work = ({ active, close }) => {
             </RoughNotation>
             with software and hardware engineering teams
           </li>
-          <li>Tested products with the QA team</li>
+          <li>Tested products and managed beta groups with the QA team</li>
         </ul>
 
         <h2>Counselor & Lifeguard, Camp Manitou</h2>
@@ -82,7 +83,10 @@ const Work = ({ active, close }) => {
         <h2>Co-Founder, Alex & Teddy&#39;s Academy of Code</h2>
         <ul>
           <p>2016-2019</p>
-          <li>Taught over 100 students how to code in 3 different languages</li>
+          <li>
+            Started a company to teach over 100 students how to code in 3
+            different languages
+          </li>
         </ul>
 
         <h2>Co-Founder, a&b granola L.L.C.</h2>
@@ -93,6 +97,7 @@ const Work = ({ active, close }) => {
             services company
           </li>
           <li>Sold granola at local restaurants as well as via our website</li>
+          <li>Donated proceeds to a local food bank</li>
         </ul>
       </RoughNotationGroup>
     </div>

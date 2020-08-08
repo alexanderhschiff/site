@@ -28,6 +28,7 @@ const About = ({ active, close }) => {
             padding={4}
             color="blue"
             multiline={true}
+            padding={8}
           >
             Duke University
           </RoughNotation>{" "}
