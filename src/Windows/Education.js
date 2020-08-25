@@ -64,7 +64,7 @@ const Education = ({ active, close }) => {
         <h3>Coursework</h3>
         <ul>
           <li>
-            Computer Science: Data Structures & Algorithms,
+            Computer Science: Data Structures & Algorithms,{" "}
             <RoughNotation type="box" multiline={true}>
               Computer Architecture, Discrete Math,
             </RoughNotation>
