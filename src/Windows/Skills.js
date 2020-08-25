@@ -53,7 +53,7 @@ const Skils = ({ active, close }) => {
             </RoughNotation>
             , R, Git
           </li>
-          <li>Knowledge in Python & C</li>
+          <li>Knowledge in Python, C, MIPS, Scheme, NodeJS</li>
         </ul>
         <h2>Language</h2>
         <ul>
