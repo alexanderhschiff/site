@@ -87,14 +87,18 @@ const Work = ({ active, close }) => {
             Started a company to teach over 100 students how to code in 3
             different languages
           </li>
+          <li>
+            Worked with housing insecure children, teaching computer literacy
+            and coding basics
+          </li>
         </ul>
 
         <h2>Co-Founder, a&b granola L.L.C.</h2>
         <ul>
           <p>2012-2019</p>
           <li>
-            Started and ran a fully licensed, insured, and permitted food
-            services company
+            Started and ran a fully licensed, insured, permitted, and profitable
+            food services company
           </li>
           <li>Sold granola at local restaurants as well as via our website</li>
           <li>Donated proceeds to a local food bank</li>
