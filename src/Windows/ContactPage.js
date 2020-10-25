@@ -31,7 +31,7 @@ const ContactPage = ({ active, close }) => {
         <img src={animoji} style={{ width: "50%", paddingLeft: "25%" }} />
         <div className="grid">
           <a
-            href="https://drive.google.com/file/d/1RbEgMRmWdaWprfSo_KFLwzRY96kLxb6e/view?usp=sharing"
+            href="https://drive.google.com/file/d/1o6ztMBKtc_emPmQkoWx4-SXB1cDglukF/view?usp=sharing"
             target="_blank"
           >
             <RoughNotation

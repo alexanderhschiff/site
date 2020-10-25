@@ -19,7 +19,7 @@ const Skils = ({ active, close }) => {
           show={!active}
           type="underline"
           color="green"
-          strokeWidth={5}
+          strokeWidth={9}
         >
           Skills
         </RoughNotation>
@@ -33,7 +33,7 @@ const Skils = ({ active, close }) => {
             <RoughNotation type="underline" strokeWidth={4} padding={0}>
               Java
             </RoughNotation>
-            , SwiftUI{" "}
+            , Python, SwiftUI{" "}
             <RoughNotation
               type="box"
               padding={10}
@@ -53,7 +53,7 @@ const Skils = ({ active, close }) => {
             </RoughNotation>
             , R, Git
           </li>
-          <li>Knowledge in Python, C, MIPS, Scheme, NodeJS</li>
+          <li>Knowledge in C, C++, MIPS, Scheme, NodeJS</li>
         </ul>
         <h2>Language</h2>
         <ul>

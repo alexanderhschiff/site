@@ -15,7 +15,12 @@ const About = ({ active, close }) => {
         </button>
       )}
       <h1>
-        <RoughNotation show={!active} type="circle" padding={10}>
+        <RoughNotation
+          show={!active}
+          type="circle"
+          strokeWidth={5}
+          padding={10}
+        >
           About
         </RoughNotation>
       </h1>
@@ -33,7 +38,7 @@ const About = ({ active, close }) => {
             Duke University
           </RoughNotation>{" "}
           studying Computer Science, Innovation & Entrepreneurship, and
-          Psychology. I am passionate about harnessing the power of{" "}
+          Psychology. I am ambitious, passionate about harnessing the power of{" "}
           <RoughNotation
             multiline={true}
             type="underline"
@@ -42,11 +47,11 @@ const About = ({ active, close }) => {
           >
             business and technology for good
           </RoughNotation>
-          , thrive when{" "}
+          , and thrive when{" "}
           <RoughNotation type="highlight" color="#af70ff7f">
             collaborating
           </RoughNotation>{" "}
-          and problem-solving, and put 100% into everything I do.
+          and problem-solving.
         </p>
       </RoughNotationGroup>
     </div>

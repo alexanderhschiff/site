@@ -54,7 +54,7 @@ const Education = ({ active, close }) => {
             >
               Innovation & Entrepreneurship
             </RoughNotation>
-            , and a minor in{" "}
+            , and minor in{" "}
             <RoughNotation type="circle" padding={4}>
               Psychology
             </RoughNotation>
@@ -65,16 +65,21 @@ const Education = ({ active, close }) => {
         <ul>
           <li>
             Computer Science: Data Structures & Algorithms,{" "}
-            <RoughNotation type="box" multiline={true}>
-              Computer Architecture, Discrete Math,
+            <RoughNotation type="box" color="blue" multiline={true}>
+              Computer Architecture,
             </RoughNotation>
-            Computational Biology
+            <RoughNotation type="circle" color="red" multiline={true}>
+              Discrete Math,
+            </RoughNotation>
+            <RoughNotation type="underline" color="green" multiline={true}>
+              Computational Biology
+            </RoughNotation>
           </li>
           <li>
             <RoughNotation
               type="circle"
-              color="green"
-              padding={4}
+              color="blue"
+              padding={7}
               multiline={true}
             >
               Linear Algebra
@@ -89,17 +94,18 @@ const Education = ({ active, close }) => {
           </li>
           <li>
             Innovation & Entrepreneurship: Innovator's Workshop, Customer
-            Empathy Brand Design
+            Empathy & Brand Design
           </li>
         </ul>
         <h3>Activities and Societies</h3>
         <ul>
           <li>Duke Student Founders</li>
+          <li>Jewish Learning Fellowship</li>
+          <li>#GetCooking culinary course</li>
           <li>Delta Sigma Pi Business Fraternity</li>
           <li>Club Running</li>
           <li>Club Sailing</li>
-          <li>Sigma Phi Epsilon</li>
-          <li>Jewish Learning Fellowship</li>
+          <li>Duke Conversations</li>
         </ul>
         <h2>Brentwood High School</h2>
         <ul>

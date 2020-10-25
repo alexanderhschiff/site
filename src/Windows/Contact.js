@@ -22,9 +22,8 @@ const Contact = ({ active, close }) => {
         </button>
       )}
       <div className="contactBox">
-        {/* <img src={animoji} /> */}
         <a
-          href="https://drive.google.com/file/d/1RbEgMRmWdaWprfSo_KFLwzRY96kLxb6e/view?usp=sharing"
+          href="https://drive.google.com/file/d/1o6ztMBKtc_emPmQkoWx4-SXB1cDglukF/view?usp=sharing"
           target="_blank"
         >
           <RoughNotation

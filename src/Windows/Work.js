@@ -28,27 +28,23 @@ const Work = ({ active, close }) => {
       <hr></hr>
       <RoughNotationGroup show={active}>
         <h2>
-          Software Engineering Intern,{" "}
-          <RoughNotation type="highlight" color="#0000ff7f">
-            IBM
+          <RoughNotation type="highlight" color="#0000ff6f">
+            Software Engineering Intern, IBM
           </RoughNotation>
         </h2>
         <ul>
           <p>Remote &#8594; Summer 2020</p>
           <li>
-            Built out a React web application with partnering fintech startup
-            Wayapay
+            Built out a
+            <RoughNotation type="underline" color="red" multiline={true}>
+              {" "}
+              React web application{" "}
+            </RoughNotation>
+            with partnering fintech startup Wayapay
           </li>
           <li>
-            <RoughNotation
-              type="underline"
-              color="red"
-              strokeWidth={4}
-              multiline={true}
-            >
-              Transitioned Java backend
-            </RoughNotation>{" "}
-            from AWS to IBM Cloud with partnering healthtech startup Galen Data
+            Transitioned Java backend from AWS to IBM Cloud with partnering
+            healthtech startup Galen Data
           </li>
           <li>
             Supported startup recruitment for the IBM Hyper Protect Accelerator
@@ -62,10 +58,10 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
-            <RoughNotation type="circle" padding={6} color="green">
-              Collaborated{" "}
+            Collaborated with{" "}
+            <RoughNotation type="circle" color="green" padding={10}>
+              software and hardware engineering teams
             </RoughNotation>
-            with software and hardware engineering teams
           </li>
           <li>Tested products and managed beta groups with the QA team</li>
         </ul>
@@ -84,8 +80,11 @@ const Work = ({ active, close }) => {
         <ul>
           <p>2016-2019</p>
           <li>
-            Started a company to teach over 100 students how to code in 3
-            different languages
+            Started a company to{" "}
+            <RoughNotation type="box" color="orange" padding={5}>
+              teach over 100 students how to code
+            </RoughNotation>{" "}
+            in 3 different languages
           </li>
           <li>
             Worked with housing insecure children, teaching computer literacy
@@ -97,8 +96,10 @@ const Work = ({ active, close }) => {
         <ul>
           <p>2012-2019</p>
           <li>
-            Started and ran a fully licensed, insured, permitted, and profitable
-            food services company
+            Started and ran a fully{" "}
+            <RoughNotation type="highlight" color="#ff00ff4f" padding={5}>
+              licensed, insured, permitted, and profitable food services company
+            </RoughNotation>
           </li>
           <li>Sold granola at local restaurants as well as via our website</li>
           <li>Donated proceeds to a local food bank</li>
