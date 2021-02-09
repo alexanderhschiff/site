@@ -34,7 +34,7 @@ const Education = ({ active, close }) => {
         <ul>
           <li>Expected graduation in May 2023</li>
           <li>
-            Intended major in{" "}
+            Major in{" "}
             <RoughNotation
               type="underline"
               color="red"
@@ -66,11 +66,12 @@ const Education = ({ active, close }) => {
           <li>
             Computer Science: Data Structures & Algorithms,{" "}
             <RoughNotation type="box" color="blue" multiline={true}>
-              Computer Architecture,
+              Computer Architecture,{" "}
             </RoughNotation>
+            Design and Analysis of Algorithms,{" "}
             <RoughNotation type="circle" color="red" multiline={true}>
               Discrete Math,
-            </RoughNotation>
+            </RoughNotation>{" "}
             <RoughNotation type="underline" color="green" multiline={true}>
               Computational Biology
             </RoughNotation>
@@ -94,7 +95,7 @@ const Education = ({ active, close }) => {
           </li>
           <li>
             Innovation & Entrepreneurship: Innovator's Workshop, Customer
-            Empathy & Brand Design
+            Empathy & Brand Design, New Ventures: Development
           </li>
         </ul>
         <h3>Activities and Societies</h3>

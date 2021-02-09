@@ -57,6 +57,18 @@ const Projects = ({ active, close }) => {
           </li>
         </ul>
 
+        <h2>
+          BlackRock Asset Allocation Competition and Wells Fargo Valuation
+          Competition
+        </h2>
+        <ul>
+          <p>November 2020</p>
+          <li>
+            One of only a few groups to be finalists in both competitions, each
+            with 90+ teams
+          </li>
+        </ul>
+
         <h2>Team Leader, Tesla Consulting Competition</h2>
         <ul>
           <p>April 2019</p>
