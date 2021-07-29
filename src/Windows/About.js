@@ -19,7 +19,7 @@ const About = ({ active, close }) => {
           show={!active}
           type="underline"
           strokeWidth={5}
-          padding={10}
+          color={"navy"}
         >
           About
         </RoughNotation>
