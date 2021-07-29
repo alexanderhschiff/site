@@ -41,6 +41,8 @@ const App = () => {
         return (
           <ContactPage active={active} close={() => selected(id)}></ContactPage>
         );
+      default:
+        return <About active={active} close={() => selected(id)}></About>;
     }
   };
 
@@ -51,7 +53,7 @@ const App = () => {
 
   const selected = (id) => {
     const newCoords = coords.map((item) => {
-      if (item.id == id) {
+      if (item.id === id) {
         if (item.active) {
           return { ...item, y: saveY, z: saveZ, active: !item.active };
         }
@@ -65,7 +67,7 @@ const App = () => {
   };
 
   const yScroll = (e, y) => {
-    return y - (y * 0.2 + window.innerHeight * 0.5) * 0.001 * e.deltaY;
+    return y - (y * 0.3 + window.innerHeight * 0.4) * 0.0005 * e.deltaY;
   };
 
   const scroll = (e) => {
@@ -100,6 +102,7 @@ const App = () => {
               active: item.active,
             };
           }
+
           //regular scrolling
           return {
             id: item.id,

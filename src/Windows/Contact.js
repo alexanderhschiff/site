@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import "../App.scss";
-import animoji from "../Images/animoji.png";
 
 const Contact = ({ active, close }) => {
   //contact highlights
@@ -25,6 +24,7 @@ const Contact = ({ active, close }) => {
         <a
           href="https://drive.google.com/file/d/1o6ztMBKtc_emPmQkoWx4-SXB1cDglukF/view?usp=sharing"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <RoughNotation
             onMouseEnter={() => setResume(true)}
@@ -38,7 +38,11 @@ const Contact = ({ active, close }) => {
             Resume
           </RoughNotation>
         </a>
-        <a href="https://www.linkedin.com/in/alexanderschiff" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/alexanderschiff"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <RoughNotation
             onMouseEnter={() => setLinkedIn(true)}
             onMouseLeave={() => setLinkedIn(false)}
@@ -50,7 +54,11 @@ const Contact = ({ active, close }) => {
             LinkedIn
           </RoughNotation>
         </a>
-        <a href="https://github.com/alexanderhschiff" target="_blank">
+        <a
+          href="https://github.com/alexanderhschiff"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <RoughNotation
             onMouseEnter={() => setGitHub(true)}
             onMouseLeave={() => setGitHub(false)}
@@ -74,9 +82,13 @@ const Contact = ({ active, close }) => {
           </RoughNotation>
         </a>
         <h4>
-          I built this site with React and published it with AWS Amplify.
-          Animation library from{" "}
-          <a href="https://roughnotation.com" target="_blank">
+          I built this site with React and published it through GitHub with AWS
+          Amplify. Animation library from{" "}
+          <a
+            href="https://roughnotation.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Rough Notation.
           </a>
         </h4>

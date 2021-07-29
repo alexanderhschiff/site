@@ -26,29 +26,52 @@ const Work = ({ active, close }) => {
         </RoughNotation>
       </h1>
       <hr></hr>
+
       <RoughNotationGroup show={active}>
         <h2>
-          <RoughNotation type="highlight" color="#0000ff6f">
+          <RoughNotation
+            type="underline"
+            color="#00dd77aa"
+            multiline={true}
+            strokeWidth={9}
+          >
+            Venture Capital Intern at MizMaa Ventures and Birthright Excel
+            Fellow
+          </RoughNotation>
+        </h2>
+        <ul>
+          <p>Tel Aviv, Israel &#8594; Summer 2021</p>
+          <li>
+            Created investment memos, due diligence reports, and market segment
+            investment theses
+          </li>
+          <li>Met with dozens of investment-seeking startups a week</li>
+
+          <h3>Birthright Excel Fellowship</h3>
+          <li>
+            10-week intensive fellowship engaging with distinguished Israeli
+            leaders in the business, technology, political, and philanthropic
+            worlds designed to foster leadership, innovation, Jewish identity,
+            and teamwork
+          </li>
+          <li>
+            Selected as one of 54 fellows from a distinguished pool of over
+            2,500 applicants
+          </li>
+        </ul>
+
+        <h2>
+          <RoughNotation type="highlight" color="#0000dd66">
             Software Engineering Intern, IBM
           </RoughNotation>
         </h2>
         <ul>
           <p>Remote &#8594; Summer 2020</p>
           <li>
-            Built out a
-            <RoughNotation type="underline" color="red" multiline={true}>
-              {" "}
-              React web application{" "}
-            </RoughNotation>
-            with partnering fintech startup Wayapay
+            Developed in React front-end and Java backend for portfolio startups
+            Wayapay and Galen Data
           </li>
-          <li>
-            Transitioned Java backend from AWS to IBM Cloud with partnering
-            healthtech startup Galen Data
-          </li>
-          <li>
-            Supported startup recruitment for the IBM Hyper Protect Accelerator
-          </li>
+          <li>Recruited startups for the IBM Hyper Protect Accelerator</li>
         </ul>
 
         <h2>
@@ -58,51 +81,15 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
-            Collaborated with{" "}
-            <RoughNotation type="circle" color="green" padding={10}>
-              software and hardware engineering teams
+            Wore many hats, learning firsthand what it takes to turn a{" "}
+            <RoughNotation type="circle" color="pink" padding={10}>
+              startup into a unicorn
             </RoughNotation>
           </li>
-          <li>Tested products and managed beta groups with the QA team</li>
-        </ul>
-
-        <h2>Counselor & Lifeguard, Camp Manitou</h2>
-        <ul>
-          <p>Oakland, Maine &#8594; Summers of 2018 and 2019</p>
-          <li>Lived with and cared for a bunk of 15 nine-year-olds</li>
           <li>
-            Taught waterskiing and collaborated with the team of lifeguards to
-            ensure a safe waterfront
+            Collaborated with software and hardware engineering teams on new
+            products
           </li>
-        </ul>
-
-        <h2>Co-Founder, Alex & Teddy&#39;s Academy of Code</h2>
-        <ul>
-          <p>2016-2019</p>
-          <li>
-            Started a company to{" "}
-            <RoughNotation type="box" color="orange" padding={5}>
-              teach over 100 students how to code
-            </RoughNotation>{" "}
-            in 3 different languages
-          </li>
-          <li>
-            Worked with housing insecure children, teaching computer literacy
-            and coding basics
-          </li>
-        </ul>
-
-        <h2>Co-Founder, a&b granola L.L.C.</h2>
-        <ul>
-          <p>2012-2019</p>
-          <li>
-            Started and ran a fully{" "}
-            <RoughNotation type="highlight" color="#ff00ff4f" padding={5}>
-              licensed, insured, permitted, and profitable food services company
-            </RoughNotation>
-          </li>
-          <li>Sold granola at local restaurants as well as via our website</li>
-          <li>Donated proceeds to a local food bank</li>
         </ul>
       </RoughNotationGroup>
     </div>

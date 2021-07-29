@@ -28,11 +28,16 @@ const ContactPage = ({ active, close }) => {
           </RoughNotation>
         </h1>
         <hr></hr>
-        <img src={animoji} style={{ width: "50%", paddingLeft: "25%" }} />
+        <img
+          src={animoji}
+          style={{ width: "50%", paddingLeft: "25%" }}
+          alt="Animoji of me!"
+        />
         <div className="grid">
           <a
             href="https://drive.google.com/file/d/1o6ztMBKtc_emPmQkoWx4-SXB1cDglukF/view?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <RoughNotation
               onMouseEnter={() => setResume(true)}
@@ -46,7 +51,11 @@ const ContactPage = ({ active, close }) => {
               Resume
             </RoughNotation>
           </a>
-          <a href="https://www.linkedin.com/in/alexanderschiff" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/alexanderschiff"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RoughNotation
               onMouseEnter={() => setLinkedIn(true)}
               onMouseLeave={() => setLinkedIn(false)}
@@ -58,7 +67,11 @@ const ContactPage = ({ active, close }) => {
               LinkedIn
             </RoughNotation>
           </a>
-          <a href="https://github.com/alexanderhschiff" target="_blank">
+          <a
+            href="https://github.com/alexanderhschiff"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RoughNotation
               onMouseEnter={() => setGitHub(true)}
               onMouseLeave={() => setGitHub(false)}
@@ -82,8 +95,8 @@ const ContactPage = ({ active, close }) => {
             </RoughNotation>
           </a>
           <h4>
-            I built this site with React and published it with AWS Amplify.
-            Animation library from{" "}
+            I built this site with React and published it through GitHub with
+            AWS Amplify. Animation library from{" "}
             <a style={{ color: "#222233" }} href="https://roughnotation.com">
               Rough Notation
             </a>
