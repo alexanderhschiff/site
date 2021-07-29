@@ -17,7 +17,7 @@ const About = ({ active, close }) => {
       <h1>
         <RoughNotation
           show={!active}
-          type="circle"
+          type="underline"
           strokeWidth={5}
           padding={10}
         >
