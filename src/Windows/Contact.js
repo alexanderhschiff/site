@@ -22,7 +22,7 @@ const Contact = ({ active, close }) => {
       )}
       <div className="contactBox">
         <a
-          href="https://drive.google.com/file/d/1o6ztMBKtc_emPmQkoWx4-SXB1cDglukF/view?usp=sharing"
+          href="https://drive.google.com/file/d/18gAvgyFTq-lP4x0Bd86eM-Bpgo-71-2X/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

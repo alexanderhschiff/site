@@ -73,8 +73,9 @@ const Education = ({ active, close }) => {
               Discrete Math,
             </RoughNotation>{" "}
             <RoughNotation type="underline" color="green" multiline={true}>
-              Computational Biology
+              Computational Biology,
             </RoughNotation>
+            Analysis of Algorithms, Database Systems
           </li>
           <li>
             <RoughNotation
@@ -95,7 +96,8 @@ const Education = ({ active, close }) => {
           </li>
           <li>
             Innovation & Entrepreneurship: Innovator's Workshop, Customer
-            Empathy & Brand Design, New Ventures: Development
+            Empathy & Brand Design, New Ventures: Development (Duke's Fuqua
+            School of Business)
           </li>
         </ul>
         <h3>Activities and Societies</h3>

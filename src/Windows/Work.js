@@ -42,21 +42,23 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Tel Aviv, Israel &#8594; Summer 2021</p>
           <li>
-            Created investment memos, due diligence reports, and market segment
-            investment theses
+            Created investment memos and diligence reports: e.g. for a data
+            pipeline solution & a mockup-to-code startup
           </li>
-          <li>Met with dozens of investment-seeking startups a week</li>
+          <li>
+            Developed market segment investment theses with a focus on the rise
+            of machine learning
+          </li>
+          <li>
+            Participated in pitches with nearly 100 investment-seeking software
+            startups
+          </li>
 
           <h3>Birthright Excel Fellowship</h3>
           <li>
-            10-week intensive fellowship engaging with distinguished Israeli
-            leaders in the business, technology, political, and philanthropic
-            worlds designed to foster leadership, innovation, Jewish identity,
-            and teamwork
-          </li>
-          <li>
-            Selected as one of 54 fellows from a distinguished pool of over
-            2,500 applicants
+            Selected as one of 56 fellows from a pool of thousands to
+            participate in a 10- week intensive leadership fellowship engaging
+            with Israeli trailblazers in technology, business, and politics
           </li>
         </ul>
 
@@ -68,10 +70,17 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Remote &#8594; Summer 2020</p>
           <li>
-            Developed in React front-end and Java backend for portfolio startups
-            Wayapay and Galen Data
+            Transitioned a Java backend from AWS to IBM Cloud, working with and
+            learning from senior cloud architects
           </li>
-          <li>Recruited startups for the IBM Hyper Protect Accelerator</li>
+          <li>
+            Implemented React hooks and function components for a financial
+            payments front-end
+          </li>
+          <li>
+            Sourced software startups for the next cohort of the IBM Hyper
+            Protect Accelerator
+          </li>
         </ul>
 
         <h2>
@@ -81,14 +90,14 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
-            Wore many hats, learning firsthand what it takes to turn a{" "}
             <RoughNotation type="circle" color="pink" padding={10}>
-              startup into a unicorn
-            </RoughNotation>
+              Collaborated with software and hardware engineering teams
+            </RoughNotation>{" "}
+            to develop new flagship products startup into a unicorn
           </li>
           <li>
-            Collaborated with software and hardware engineering teams on new
-            products
+            Managed beta testers of unreleased Ring security camera and
+            communicated with QA and engineering teams
           </li>
         </ul>
       </RoughNotationGroup>

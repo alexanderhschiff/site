@@ -31,8 +31,8 @@ const Projects = ({ active, close }) => {
         <ul>
           <p>Released June 2020</p>
           <li>
-            Designed and coded every element of the app, collaborating with my
-            twin brother
+            Prototyped (Sketch) and developed (Swift/UI) a housemate status app
+            created to improve WFH
           </li>
 
           <li>
@@ -43,9 +43,15 @@ const Projects = ({ active, close }) => {
               color="green"
               brackets={["left", "right"]}
             >
-              Incorporated myriad accessibility features, dark mode, QR-code to
-              add friends, push notifications, and more
+              Implemented a Firebase backend, QR-code scan to add housemates,
+              push notifications for status updates, myriad accessibility
+              features, dark mode, haptic feedback, custom toggles, dynamic
+              interface resizing
             </RoughNotation>
+          </li>
+          <li>
+            Empathized with target users to understand and build out desired
+            features; planned future monetization
           </li>
 
           <li>
@@ -59,6 +65,15 @@ const Projects = ({ active, close }) => {
               </RoughNotation>
             </a>
           </li>
+          <li>
+            <a
+              href="https://github.com/alexanderhschiff/Shoo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
         </ul>
 
         <h2>Co-Founder, Alex & Teddy&#39;s Academy of Code</h2>
@@ -69,11 +84,11 @@ const Projects = ({ active, close }) => {
             <RoughNotation type="box" color="orange" padding={5}>
               teach over 100 students how to code
             </RoughNotation>{" "}
-            in 3 different languages
+            in Java and HTML/CSS
           </li>
           <li>
-            Worked also with housing insecure children, teaching computer
-            literacy and coding basics
+            Worked with housing insecure children, teaching computer literacy
+            and coding basics
           </li>
         </ul>
 
@@ -86,8 +101,10 @@ const Projects = ({ active, close }) => {
               licensed, insured, permitted, and profitable food services company
             </RoughNotation>
           </li>
-          <li>Sold granola at local restaurants as well as via our website</li>
-          <li>Donated proceeds to a local food bank</li>
+          <li>
+            Went door-to-door selling our product, landing recurring contracts
+            at multiple local restaurants
+          </li>
         </ul>
 
         <h2>
@@ -126,12 +143,8 @@ const Projects = ({ active, close }) => {
         <ul>
           <p>April - May 2018</p>
           <li>
-            Conducted research to empathize with target audience and develop an
-            ideal solution
-          </li>
-          <li>
-            Closely collaborated with and learned from Bain & Company
-            consultants and UCLA students
+            Developed an e-sports strategy for Netflix in collaboration with
+            Bain consultants and UCLA MBA students
           </li>
         </ul>
       </RoughNotationGroup>
