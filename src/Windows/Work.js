@@ -91,12 +91,12 @@ const Work = ({ active, close }) => {
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
             <RoughNotation type="circle" color="pink" padding={10}>
-              Collaborated with software and hardware engineering teams
-            </RoughNotation>{" "}
-            to develop new flagship products startup into a unicorn
+              Collaborated with software and hardware teams to develop the
+              Doorbell, Floodlight Cam, and Spotlight Cam
+            </RoughNotation>
           </li>
           <li>
-            Managed beta testers of unreleased Ring security camera and
+            Managed beta testers of pre-release Ring Spotlight Cam and
             communicated with QA and engineering teams
           </li>
         </ul>

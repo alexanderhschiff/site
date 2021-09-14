@@ -27,7 +27,7 @@ const About = ({ active, close }) => {
       <hr></hr>
       <RoughNotationGroup show={active}>
         <p>
-          I'm a junior at{" "}
+          I'm a junior at Duke University studying{" "}
           <RoughNotation
             type="circle"
             padding={4}
@@ -35,10 +35,9 @@ const About = ({ active, close }) => {
             multiline={true}
             padding={12}
           >
-            Duke University
+            Computer Science, Innovation & Entrepreneurship, and Psychology.
           </RoughNotation>{" "}
-          studying Computer Science, Innovation & Entrepreneurship, and
-          Psychology. I am ambitious, passionate about harnessing the power of{" "}
+          I am ambitious, passionate about harnessing the power of{" "}
           <RoughNotation
             multiline={true}
             type="underline"
@@ -49,25 +48,34 @@ const About = ({ active, close }) => {
           </RoughNotation>
           , and thrive when{" "}
           <RoughNotation type="highlight" color="#af70ff77">
-            collaborating
-          </RoughNotation>{" "}
-          and problem-solving.
+            collaborating and problem-solving.
+          </RoughNotation>
           <br></br>
           <br></br>
           As an Engineering Intern at Ring, I teamed up with engineers, spoke up
-          with my ideas, and saw firsthand what it takes to turn a startup into
-          a unicorn, learning new technical and professional skills while
-          contributing to the flagship product line. As a Software Engineering
-          Intern at IBM, I honed these abilities as I worked on front- and back-
-          end applications in React and Java while also helping the IBM Hyper
-          Protect Accelerator recruit its next cohort of startups. This past
-          summer as a VC Intern at MizMaa Ventures, I participated in dozens of
-          pitches a week, conducted due-diligence on potential investments, and
-          created market theses for future investment opportunities. Through
-          each of these experiences, I maximized the opportunity to learn from
-          the best and brightest in their fields by applying my ambitious work
-          ethic, relevant coursework and experience, and sharp interpersonal
-          skills to be a superstar teammate.
+          with my ideas, and saw firsthand what it takes to{" "}
+          <RoughNotation type="highlight" color="#fdcf4777">
+            turn a startup into a unicorn
+          </RoughNotation>
+          , learning new technical and professional skills while contributing to
+          the flagship product line (Ring Video Doorbell, Spotlight Cam,
+          Floodlight Cam). As a Software Engineering Intern at IBM, I honed
+          these abilities as I worked on front- and back- end applications in
+          React and Java while also helping the IBM Hyper Protect Accelerator
+          recruit its next cohort of startups. This past summer as a VC Intern
+          at MizMaa Ventures,{" "}
+          <RoughNotation type="highlight" color="#1155ff77">
+            I participated in nearly 100 pitches
+          </RoughNotation>
+          , conducted due-diligence on potential investments, and created market
+          theses for future investment opportunities. Through each of these
+          experiences, I{" "}
+          <RoughNotation type="highlight" color="#00a64777">
+            maximized the opportunity to learn from the best and brightest in
+            their fields
+          </RoughNotation>{" "}
+          by applying my ambitious work ethic, relevant coursework and
+          experience, and sharp interpersonal skills to be a superstar teammate.
         </p>
         <p style={{ paddingBottom: 200 }}></p>
       </RoughNotationGroup>
