@@ -29,9 +29,9 @@ const About = ({ active, close }) => {
         <p>
           I'm a junior at Duke University studying{" "}
           <RoughNotation
-            type="circle"
+            type="highlight"
             padding={4}
-            color="blue"
+            color="#fdcf4777"
             multiline={true}
             padding={12}
           >
@@ -47,14 +47,14 @@ const About = ({ active, close }) => {
             business and technology for good
           </RoughNotation>
           , and thrive when{" "}
-          <RoughNotation type="highlight" color="#af70ff77">
+          <RoughNotation type="bracket" brackets={["left", "right"]} strokeWidth={6} color="#af70ff77">
             collaborating and problem-solving.
           </RoughNotation>
           <br></br>
           <br></br>
           As an Engineering Intern at Ring, I teamed up with engineers, spoke up
           with my ideas, and saw firsthand what it takes to{" "}
-          <RoughNotation type="highlight" color="#fdcf4777">
+          <RoughNotation type="highlight" color="#00cf4777">
             turn a startup into a unicorn
           </RoughNotation>
           , learning new technical and professional skills while contributing to
@@ -70,7 +70,7 @@ const About = ({ active, close }) => {
           , conducted due-diligence on potential investments, and created market
           theses for future investment opportunities. Through each of these
           experiences, I{" "}
-          <RoughNotation type="highlight" color="#00a64777">
+          <RoughNotation type="highlight" color="#55a69977">
             maximized the opportunity to learn from the best and brightest in
             their fields
           </RoughNotation>{" "}

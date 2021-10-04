@@ -63,7 +63,7 @@ const Work = ({ active, close }) => {
         </ul>
 
         <h2>
-          <RoughNotation type="highlight" color="#0000dd66">
+          <RoughNotation type="highlight" color="#0000ff45">
             Software Engineering Intern, IBM
           </RoughNotation>
         </h2>
@@ -90,7 +90,7 @@ const Work = ({ active, close }) => {
         <ul>
           <p>Los Angeles, CA &#8594; Summer 2017</p>
           <li>
-            <RoughNotation type="circle" color="pink" padding={10}>
+            <RoughNotation type="bracket" color="pink" padding={10} strokeWidth={7}>
               Collaborated with software and hardware teams to develop the
               Doorbell, Floodlight Cam, and Spotlight Cam
             </RoughNotation>

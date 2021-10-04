@@ -60,7 +60,7 @@ const Projects = ({ active, close }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <RoughNotation type="box" multiline={false}>
+              <RoughNotation type="box" multiline={false} color = "red">
                 Download
               </RoughNotation>
             </a>
@@ -114,7 +114,7 @@ const Projects = ({ active, close }) => {
         <ul>
           <p>November 2020</p>
           <li>
-            One of only a few groups to be finalists in both competitions, each
+            One of only 3 groups to be finalists in both competitions, each
             with 90+ teams competing
           </li>
         </ul>

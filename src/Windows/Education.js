@@ -34,7 +34,7 @@ const Education = ({ active, close }) => {
         <ul>
           <li>Expected graduation in May 2023</li>
           <li>
-            Major in{" "}
+            B.S. in{" "}
             <RoughNotation
               type="underline"
               color="red"
@@ -55,11 +55,11 @@ const Education = ({ active, close }) => {
               Innovation & Entrepreneurship
             </RoughNotation>
             , and minor in{" "}
-            <RoughNotation type="circle" padding={4}>
+            <RoughNotation type="highlight" padding={4} color="#fdcf4777">
               Psychology
             </RoughNotation>
           </li>
-          <li>3.8 GPA</li>
+          <li>3.81 GPA</li>
         </ul>
         <h3>Coursework</h3>
         <ul>
@@ -73,9 +73,9 @@ const Education = ({ active, close }) => {
               Discrete Math,
             </RoughNotation>{" "}
             <RoughNotation type="underline" color="green" multiline={true}>
-              Computational Biology,
+              Computational Biology,{" "}
             </RoughNotation>
-            Analysis of Algorithms, Database Systems
+            Database Systems
           </li>
           <li>
             <RoughNotation

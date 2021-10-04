@@ -45,19 +45,19 @@ const Skils = ({ active, close }) => {
             ,
             <RoughNotation
               type="underline"
-              color="pink"
+              color="purple"
               strokeWidth={4}
               multiline={true}
             >
               Web Development (React, HTML, JavaScript, CSS)
             </RoughNotation>
-            , R, Git
+            , Git
           </li>
-          <li>Knowledge in C, Swift, MIPS, Scheme, NodeJS</li>
+          <li>Knowledge in C, C++, R, SQL, PostgreSQL, Swift, MIPS, Scheme, NodeJS</li>
         </ul>
         <h2>Language</h2>
         <ul>
-          <li>Proficient in Spanish</li>
+          <li>Conversational Spanish</li>
         </ul>
         <h2>Interests</h2>
         <ul>
